@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/myLogo.png">
+    <title>Portfolio</title>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid bg-dark">
+    <!-- navbar section -->
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-0 mt-0">
+            <div class="container mt-2">
+                <a class="navbar-brand text-white fs-2" href="#"><span class="text-warning">S</span>udhir.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home">
+        <!-- displaying main content -->
+        <div class="intro container-fluid d-flex align-items-center vh-100 bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center text-center text-lg-start">
+                    <!-- Text Content -->
+                    <div class="col-lg-6">
+                        <div class="intro-text mb-4">
+                            <h1 class="display-3 fw-bold">
+                                Hi, I'm <span class="text-warning">Sudhir</span>
+                            </h1>
+                            <h2 class="fs-2 text-light-emphasis">Front End Developer<span class="text-warning">.</span></h2>
+                            <p class="lead text-muted">
+                                Passionate about crafting modern, responsive, and engaging web experiences.
+                            </p>
+                            <a href="#projects" class="btn btn-warning btn-lg mt-3 shadow-sm">View My Work</a>
+                        </div>
+                    </div>
+                    <!-- Profile Image -->
+                    <div class="col-lg-6 text-center">
+                        <img src="./images/image1.jpg" alt="Profile Picture"
+                            class="img-fluid rounded-circle shadow-lg border border-4 border-warning" width="300">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center text-center text-lg-start gy-4">
+                    <!-- Profile Image -->
+                    <div class="col-md-6 col-lg-5 text-center">
+                        <img src="./images/image1.jpg" alt="About Image"
+                            class="img-fluid rounded-4 shadow-lg border border-4 border-warning">
+                    </div>
+                    <!-- About Text -->
+                    <div class="col-md-6 col-lg-7">
+                        <h2 class="fw-bold display-5 text-dark">About Me</h2>
+                        <p class="lead text-muted">
+                            I am a passionate <span class="text-warning fw-semibold">Front-End Developer</span> dedicated to building beautiful,
+                            functional, and responsive web applications. With a keen eye for design and a love for coding, I bring
+                            creative ideas to life using modern web technologies.
+                        </p>
+                        <h6 class="mt-2 text-dark">Tech Skills</h6>
+                        <div class="d-flex flex-wrap gap-3 mt-3">
+                        <span class="badge bg-primary p-2">HTML</span>
+                        <span class="badge bg-secondary p-2">CSS</span>
+                        <span class="badge bg-danger p-2">Bootstrap</span>
+                        <span class="badge bg-warning text-dark p-2">JavaScript</span>
+                        <span class="badge bg-info text-dark p-2">Tailwind CSS</span>
+                        <span class="badge bg-success p-2">React.js</span>
+                        <span class="badge bg-dark p-2">Git & GitHub</span>
+                </div>
+                        <a href="#contact" class="btn btn-dark btn-lg mt-4 shadow-sm">Let's Connect</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-5 text-dark">My Projects</h2>
+                    <p class="lead text-muted">Here are some of my recent projects.</p>
+                </div>
+        
+                <div class="row g-4">
+                    <!-- Snake Game Project -->
+                    <div class="col-md-6">
+                        <div class="project-card shadow-lg border-0">
+                            <img src="./images/snakegame.png" class="card-img-top" alt="Snake Game">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Snake Game</h5>
+                                <!-- <p class="card-text text-muted">A classic Snake game built using JavaScript for fun and learning.</p> -->
+                                <a href="https://snake-game-one-iota.vercel.app/" class="btn btn-warning btn-sm shadow-sm me-2" target="_blank">Live Demo</a>
+                                <a href="https://github.com/sudhirprc/SnakeGame" class="btn btn-dark btn-sm shadow-sm" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Good Luck Restaurant Project -->
+                    <div class="col-md-6">
+                        <div class="project-card shadow-lg border-0">
+                            <img src="./images/website.png" class="card-img-top" alt="Good Luck Restaurant">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Good Luck Restaurant</h5>
+                                <!-- <p class="card-text text-muted">A beautifully designed restaurant website showcasing menu and ambiance.</p> -->
+                                <a href="https://restuarant-website-design-bootstrap.vercel.app/" class="btn btn-warning btn-sm shadow-sm me-2" target="_blank">Live Demo</a>
+                                <a href="https://github.com/sudhirprc/Restuarant-website-Design-bootstrap-" class="btn btn-dark btn-sm shadow-sm" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-5">Contact Me</h2>
+                    <p class="lead text-white">Let's connect! Feel free to reach out.</p>
+                </div>
+        
+                <div class="row">
+                    <!-- Contact Info -->
+                    <div class="col-lg-5 mb-4">
+                        <h4 class="fw-bold">Get In Touch</h4>
+                        <p class="text-secondary">I'm open to collaborations and exciting projects. Drop me a message!</p>
+        
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-envelope text-warning me-2"></i>
+                                <a href="mailto:sudhirsarav1110@gmail.com" class="text-white text-decoration-none">sudhirsarav1110@gmail.com</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone text-warning me-2"></i>
+                                <a href="tel:9042158008" class="text-white text-decoration-none">9042158008</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-map-marker-alt text-warning me-2"></i>Chennai, India
+                            </li>
+                        </ul>
+        
+                        <!-- Social Links -->
+                        <div class="d-flex gap-3">
+                            <a href="https://www.linkedin.com/in/sudhir-s-221650229/" target="_blank" class="text-white fs-4">
+                                <i class="bi bi-linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                  </svg></i>
+                            </a>
+                            <a href="https://github.com/sudhirprc" target="_blank" class="text-white fs-4">
+                                <i class="bi bi-github"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                  </svg></i>
+                            </a>
+                            <a href="https://x.com/ishownothi51197" target="_blank" class="text-white fs-4">
+                                <i class="bi bi-twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></i>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Contact Form -->
+                    <div class="col-lg-7">
+                        <div class="card bg-light text-dark shadow-lg p-4">
+                            <form action="https://formspree.io/f/xwpvqebg" method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Your Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FontAwesome Icons (Add this in your HTML <head> if not included) -->
+        <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+        
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

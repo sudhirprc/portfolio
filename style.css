@@ -1,0 +1,78 @@
+html,body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Space between text and image */
+    padding: 50px;
+    max-width: 900px;
+    margin: auto; /* Centering */
+    flex-wrap: wrap; /* Responsive */
+}
+
+.intro-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; 
+}
+
+.intro-text p {
+    margin: 5px 0;
+}
+
+.intro img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image fits well */
+    border-style: solid;
+    border-color: #fff206;
+}
+
+.nav-link.active {
+    color: #f39c12; /* Highlight color */
+    font-weight: bold;
+    border-bottom: 2px solid #f39c12;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add deeper shadow */
+}
+
+.project-card img {
+    border-radius: 8px;
+    transition: transform 0.3s; /* Smooth transition for image */
+}
+
+.project-card:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+.project-card h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
